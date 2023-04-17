@@ -11,38 +11,11 @@ out="""<html>
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="HandheldFriendly" content="true" />
 
-
-		<style>.review,.top,.bottom{text-align:left;
-				max-width:30em;}
+ <link rel="stylesheet" href="style.css" />
+		<style>
                       img{max-width:4em;transition-duration: 4s;}
                       img:hover{max-width:20em;}
-			html,body{
-				font-family:arial;
-				margin:0;
-				background-color:black;
-			}
-			h3{
-				margin-top:0;
-			}
-			.review{
-				padding:0.5em;
-				margin:0;
-				display:block;
-				background-color:#AAF;
-				opacity:0.7;
-				border-bottom:solid;
-			}
-			.top{
-				padding:0.5em;
-				margin:0;
-				display:block;
-				background-color:#AFA;
-				opacity:0.7;
-				border-bottom:solid;
-			}
-			.review:hover{
-				opacity:.8;
-			}
+			
 		</style>
 	</head>
 	<body>
