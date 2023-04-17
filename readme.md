@@ -29,7 +29,7 @@ Todo:
 
 - standardize the style sheet in a seperate style.css
 - support more websites (myanimelist, goodreads, etc)
-- golang rewrite
+- compiled language rewrite (either golang or c#)
 - create sub folder for outputted html files
 - make it easy to define your username in the mirrorMaster
 - make it easy to edit the update.bat
