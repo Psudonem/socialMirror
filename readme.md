@@ -19,9 +19,11 @@ how to use:
     - feedparser
     - os
     - subprocess
+    - json
 
 - write whatever code you need to in update.bat, as the version provided with this website does nothing. the intention of update.bat is to send your newly generated HTML files to your web server.
-- enter the letterboxdMirror.py and backloggdMirror.py files and edit your username into the links at the top of the code. If you don't do this you'll generate a web page with my reviews instead of your own. I'll make this an easier process in the next update.
+
+- open mirrorMaster.py, enter your username for each service in the username block for each system, then click the 'save config' button. Next time you open the program, your username will be there.
 
 - after you have all of that done, just open mirrorMaster.py and click the service you want to generate a web page for. Once all that is done, click "NeoUp" to run the update batch file
 ____
@@ -31,7 +33,7 @@ Todo:
 - support more websites (myanimelist, goodreads, etc)
 - compiled language rewrite (either golang or c#)
 - create sub folder for outputted html files
-- make it easy to define your username in the mirrorMaster
+- ~make it easy to define your username in the mirrorMaster~ done, added user configuration
 - make it easy to edit the update.bat
 - make it platform agnostic (accepting batch and bash files)
 - build a local JSON database to store reviews in seperately instead of pulling a new RSS feed every time
