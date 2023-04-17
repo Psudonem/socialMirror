@@ -46,3 +46,4 @@ def letterboxdUpdate(uName):
 	fyle = open("letterboxd.html", "wb")
 	fyle.write(out)
 	fyle.close()
+	print("letterboxd update complete")

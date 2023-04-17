@@ -24,7 +24,7 @@ def backloggdUpdate(uName):
 	for f in feed.entries:
 	      out +='<div class="review">'
 	      out +="<h3>"+f.title+"</h3>"
-	      print(f.title)
+	      #print(f.title)
 	      out +="<p>"+f.summary.replace('\n','<br>')+"</p>"
 	      out +="<sub>Date published: "+str(f.published)+"</sub>"
 	      out +="</div>"
@@ -39,3 +39,4 @@ def backloggdUpdate(uName):
 	fyle = open("backloggd.html", "wb")
 	fyle.write(out)
 	fyle.close()
+	print("backloggd update complete")
