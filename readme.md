@@ -27,7 +27,7 @@ how to use:
 ____
 Todo:
 
-- standardize the style sheet in a seperate style.css
+- ~standardize the style sheet in a seperate style.css~ done
 - support more websites (myanimelist, goodreads, etc)
 - compiled language rewrite (either golang or c#)
 - create sub folder for outputted html files
