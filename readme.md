@@ -23,14 +23,17 @@ how to use:
 
 - write whatever code you need to in update.bat, as the version provided with this website does nothing. the intention of update.bat is to send your newly generated HTML files to your web server.
 
-- open mirrorMaster.py, enter your username for each service in the username block for each system, then click the 'save config' button. Next time you open the program, your username will be there.
+- open mirrorMaster.py, enter your username for each service in the username block for each system, then click the floppy disk icon. Next time you open the program, your username will be there.
 
 - after you have all of that done, just open mirrorMaster.py and click the service you want to generate a web page for. Once all that is done, click "NeoUp" to run the update batch file
 ____
 Todo:
 
 - ~standardize the style sheet in a seperate style.css~ done
-- support more websites (myanimelist, goodreads, etc)
+- support more websites:
+    - Myanimelist
+    - ~Goodreads~ done
+    - Oku
 - compiled language rewrite (either golang or c#)
 - create sub folder for outputted html files
 - ~make it easy to define your username in the mirrorMaster~ done, added user configuration
