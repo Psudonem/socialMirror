@@ -35,7 +35,7 @@ def letterboxdUpdate(uName):
 	      print(e.title)
 	      print(e.summary)
 
-	out+="""<div class="top">
+	out+="""<div class="bottom">
 		<a href="index.html"><h1>Other Mirrors</h1></a>
 	</div></center>
 		</body>

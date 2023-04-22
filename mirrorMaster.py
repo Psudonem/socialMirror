@@ -4,6 +4,7 @@ import os
 import backloggdMirror as b
 import letterboxdMirror as l
 import goodreads as g
+import myAnimeList as m
 
 import json
 
@@ -17,6 +18,7 @@ layout = [  [sg.Text('Click a button to make a mirror')],
             [sg.Text('Backloggd Username:'),sg.InputText(key='backloggd'),sg.Button('Update Backloggd')],
             [sg.Text('Letterboxd Username:'),sg.InputText(key='letterboxd'),sg.Button('Update Letterboxd')],
             [sg.Text('Goodreads Profile Link:'),sg.InputText(key='goodreads'),sg.Button('Update Goodreads')],
+            [sg.Text('MyAnimeList Username:'),sg.InputText(key='myAnimeList'),sg.Button('Update MyAnimeList')],
             [sg.Button('',image_data=icon, key='Save Config'),sg.Button('Exit'),sg.Button('Upload',key='NeoUp')]]
 
 # Create the Window
@@ -30,9 +32,15 @@ if os.path.exists('config.json'):
   fyle.close()
   config = json.loads(fig)
   print(config['backloggd'])
-  window['backloggd'].update(config['backloggd'])
-  window['letterboxd'].update(config['letterboxd'])
-  window['goodreads'].update(config['goodreads'])
+
+  if 'backloggd' in config.keys():
+    window['backloggd'].update(config['backloggd'])
+  if 'letterboxd' in config.keys():
+    window['letterboxd'].update(config['letterboxd'])
+  if 'goodreads' in config.keys():
+    window['goodreads'].update(config['goodreads'])
+  if 'myAnimeList' in config.keys():
+    window['myAnimeList'].update(config['myAnimeList'])
   first = True
 while True:
     event, values = window.read()
@@ -47,6 +55,8 @@ while True:
     elif event=='Update Goodreads':
           #subprocess.call(["python", "letterboxdMirror.py"])
           g.goodReadsUpdate(values['goodreads'])
+    elif event=='Update MyAnimeList':
+          m.malUpdate(values['myAnimeList'])
     elif event=='NeoUp':
           os.system("upload.bat")
     elif event=='Save Config':
