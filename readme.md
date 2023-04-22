@@ -20,6 +20,7 @@ how to use:
     - os
     - subprocess
     - json
+    - Beautiful soup 4 (probably)
 
 - write whatever code you need to in update.bat, as the version provided with this website does nothing. the intention of update.bat is to send your newly generated HTML files to your web server.
 
@@ -31,7 +32,7 @@ Todo:
 
 - ~standardize the style sheet in a seperate style.css~ done
 - support more websites:
-    - Myanimelist
+    - ~Myanimelist~ done
     - ~Goodreads~ done
     - Oku
 - compiled language rewrite (either golang or c#)
@@ -39,4 +40,4 @@ Todo:
 - ~make it easy to define your username in the mirrorMaster~ done, added user configuration
 - make it easy to edit the update.bat
 - make it platform agnostic (accepting batch and bash files)
-- build a local JSON database to store reviews in seperately instead of pulling a new RSS feed every time
+- build a local JSON database to store reviews in seperately instead of pulling a new RSS feed every time < next up
