@@ -40,4 +40,4 @@ Todo:
 - ~make it easy to define your username in the mirrorMaster~ done, added user configuration
 - make it easy to edit the update.bat
 - make it platform agnostic (accepting batch and bash files)
-- build a local JSON database to store reviews in seperately instead of pulling a new RSS feed every time < next up
+- ~build a local JSON database to store reviews in seperately instead of pulling a new RSS feed every time < next up~ DONE!!
